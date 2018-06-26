@@ -1,0 +1,4 @@
+#!/bin/bash
+
+compile=command g++ $1 `pkg-config opencv --cflags --libs` -Wall
+$compile
